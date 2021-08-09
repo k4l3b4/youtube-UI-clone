@@ -1,4 +1,4 @@
-## 4.1. Getting a Youtube Data API key
+## 1.0. Getting a Youtube Data API key
 
 1. Head over to the [Google developers console](https://console.developers.google.com)
 2. Create a new project by clicking on `Select project` drop down right next to the logo. Click the `New Project` button an give it a speaking name.
@@ -15,9 +15,9 @@
 13. Click the `What credentials do I need button`
 14. Copy the API key
 
-## 4.2. Providinng the API key to your application
+## 1.1. Providinng the API key to your application
 
-### 4.2.1 Option 1 - Environment variable (recommended)
+### 1.1.1 Option 1 - Environment variable (recommended)
 
 Provide your Youtube Data API key with the `REACT_APP_YT_API_KEY` environment variable.
 
@@ -33,7 +33,7 @@ and then define the `REACT_APP_YT_API_KEY` environment variable which is suppose
 REACT_APP_YT_API_KEY=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### 4.2.2 Option 2 - hardcode API key
+### 1.1.2 Option 2 - hardcode API key
 
 As an alternative, you could just hardcode the API key in the `src/App.js` file.
 
@@ -45,7 +45,7 @@ However, if you do want to hardcode the `Youtube Data API key`, you can head ove
 const API_KEY = 'AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 ```
 
-## 4.3. Installing dependencies
+## 1.3. Installing dependencies
 
 To install the dependencies run
 
@@ -59,9 +59,9 @@ With [yarn](https://yarnpkg.com/lang/en/)
 yarn install
 ```
 
-## 4.4 Running the application
+## 1.4 Running the application
 
-### 4.4.1 Running locally with local env vars
+### 1.4.1 Running locally with local env vars
 
 You can run:
 ```
@@ -92,7 +92,7 @@ yarn start
 
 **If you close the terminal, you will need to source the file again. That's why it is recommended to just run `npm run dev` so you don't need to think about it**.
 
-### 4.4.2 Running locally with hardcoded Youtube API key
+### 1.4.2 Running locally with hardcoded Youtube API key
 
 If you copied and pasted the API key directly into the code, you do not need to source anything and you can just run:
 
@@ -108,7 +108,7 @@ yarn start
 
 **Make sure to not commit your file to Git!**
 
-# 5 Tests
+# 2 Tests
 
 This project contains an extensive suite of tests and makes use of [Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme).
 
@@ -124,7 +124,7 @@ You can also use [yarn](https://yarnpkg.com/lang/en/) to run the tests.
 yarn test
 ```
 
-# 6 Features
+# 3 Features
 
 This application includes the major features of Youtube such as
 
@@ -134,7 +134,7 @@ This application includes the major features of Youtube such as
 - watching videos
 - displaying comments and video details
 
-# 7 Used technologies
+# 4 Used technologies
 
 - [React / create-react-app](https://github.com/facebook/create-react-app)
 - [Redux](https://redux.js.org/)
@@ -143,12 +143,3 @@ This application includes the major features of Youtube such as
 - [Jest](https://jestjs.io/)
 - [Enzyme](https://airbnb.io/enzyme/)
 - [Semantic UI](https://react.semantic-ui.com/)
-- CSS Grid / Flexbox
-
-# 8 Disclaimer
-
-This project is **solely intended for educational purposes** and is created under **fair use**.
-
-It is **not intended to create any kind of Youtube competitor**, but to teach advanced concepts in frontend development.
-
-Just see it a nice educational project that will help you to improve your coding skills.
