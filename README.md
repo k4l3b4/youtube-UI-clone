@@ -30,7 +30,7 @@ touch .env.local
 and then define the `REACT_APP_YT_API_KEY` environment variable which is supposed to hold your `Youtube Data v3 API` key in the `.env.local` file like so:
 
 ```
-REACT_APP_YT_API_KEY=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REACT_APP_YT_API_KEY=YOUR_API_KEY
 ```
 
 ### 1.1.2 Option 2 - hardcode API key
@@ -42,7 +42,7 @@ In general, we'd recommend going with the environment variable approach to **pre
 However, if you do want to hardcode the `Youtube Data API key`, you can head over to the `src/App.js` file and paste your API key in:
 
 ```
-const API_KEY = 'AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+const API_KEY = 'YOUR_API_KEY';
 ```
 
 ## 1.3. Installing dependencies
