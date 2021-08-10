@@ -1,7 +1,11 @@
 import React from 'react';
-import {Form, Icon, Image, Input, Menu} from 'semantic-ui-react';
+import { Form, Image, Input, Menu } from 'semantic-ui-react';
 import './HeaderNav.scss';
-import {Link, withRouter} from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import { CameraVideo } from '@styled-icons/bootstrap/CameraVideo'
+import { Grid3x3Gap } from '@styled-icons/bootstrap/Grid3x3Gap';
+import { Notifications } from '@styled-icons/ionicons-outline/Notifications'
+
 
 export class HeaderNav extends React.Component {
   constructor(props) {
@@ -16,7 +20,7 @@ export class HeaderNav extends React.Component {
       <Menu borderless className='top-menu' fixed='top'>
         {/* 2 */}
         <Menu.Item header className='logo'>
-          <Link to='/'><h4>K-Tube</h4></Link>
+          <Link to='/'><h4 style={{ fontSize: '35px' }}>K-Tube</h4></Link>
         </Menu.Item>
         {/* 3 */}
         <Menu.Menu className='nav-container'>
@@ -24,11 +28,10 @@ export class HeaderNav extends React.Component {
             <Form onSubmit={this.onSubmit}>
               {/* 4 */}
               <Form.Field>
-                <Input placeholder='Search'
-                       size='small'
-                       action='Go'
-                       value={this.state.query}
-                       onChange={this.onInputChange}
+                <Input placeholder='Search' style={{padding:"5 0"}}
+                  size='small'
+                  value={this.state.query}
+                  onChange={this.onInputChange}
                 />
               </Form.Field>
             </Form>
@@ -37,20 +40,20 @@ export class HeaderNav extends React.Component {
           <Menu.Menu position='right'>
             <Menu.Item>
               {/* 6 */}
-              <Icon className='header-icon' name='video camera' size='large'/>
+              {<CameraVideo style={{ height: "30px", width: "30px" }} />}
+              {/* <Icon className='header-icon' name='video camera' size='large'/> */}
             </Menu.Item>
             <Menu.Item>
-              <Icon className='header-icon' name='grid layout' size='large'/>
+              {<Grid3x3Gap style={{ height: "30px", width: "30px" }} />}
+              {/* <Icon className='header-icon' name='grid layout' size='large'/> */}
             </Menu.Item>
             <Menu.Item>
-              <Icon className='header-icon' name='chat' size='large'/>
-            </Menu.Item>
-            <Menu.Item>
-              <Icon className='header-icon' name='alarm' size='large'/>
+              {<Notifications style={{ height: "30px", width: "30px" }} />}
+              {/* <Icon className='header-icon' name='chat' size='large'/> */}
             </Menu.Item>
             {/* 7*/}
             <Menu.Item name='avatar'>
-              <Image src='https://via.placeholder.com/80x80' avatar/>
+              <Image src='https://via.placeholder.com/80x80' avatar />
             </Menu.Item>
           </Menu.Menu>
         </Menu.Menu>
